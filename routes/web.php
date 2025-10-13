@@ -1,22 +1,22 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Livewire\Admin\Payment\Index as IndexPayment;
 use App\Livewire\Admin\Category\Features;
-use App\Livewire\Admin\Product\CkUpload;
-use App\Livewire\Admin\Product\Content;
-use App\Livewire\Admin\Product\Features as ProductFeatures;
 use App\Livewire\Admin\Category\FeatureValue;
 use App\Livewire\Admin\Category\Index as CategoryIndex;
 use App\Livewire\Admin\City\Index as CityIndex;
 use App\Livewire\Admin\Country\Index as CountryIndex;
 use App\Livewire\Admin\Dashboard\Index as DashboardIndex;
+use App\Livewire\Admin\Delivery\Index as DeliveryIndex;
+use App\Livewire\Admin\Payment\Index as IndexPayment;
+use App\Livewire\Admin\Product\CkUpload;
+use App\Livewire\Admin\Product\Content;
 use App\Livewire\Admin\Product\Create;
+use App\Livewire\Admin\Product\Features as ProductFeatures;
 use App\Livewire\Admin\Product\Index;
 use App\Livewire\Admin\State\Index as StateIndex;
-use App\Livewire\Admin\Delivery\Index as DeliveryIndex;
 use App\Livewire\Client\Auth\Index as ClientIndex;
-
+use App\Livewire\Client\Home\Home as ClientHome;
+use Illuminate\Support\Facades\Route;
 
 
 // Admin routes
@@ -41,10 +41,8 @@ Route::get('/payment/index', IndexPayment::class)->name('admin.payment.index');
 
 
 //client
-Route::get('/', function (){
-    return view('home');
-});
 
+Route::get('/', ClientHome::class)->name('home');
 Route::get('/auth', ClientIndex::class)->name('client.auth.index');
 Route::get('/auth/gmail', [ClientIndex::class, 'redirectToProvider'])->name('gmail');
 Route::get('/auth/gmail/callback', [ClientIndex::class, 'handelProviderCallback'])->name('callback');
