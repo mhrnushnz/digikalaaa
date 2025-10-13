@@ -22,7 +22,7 @@ return new class extends Migration
             $table->boolean('featured')->default(false);
             $table->timestamp('discount_duration')->nullable();
             $table->foreignId('seller_id')->nullable()->constrained('sellers');
-            $table->foreignId('category_id')->constrained('categories');
+            $table->foreignId('category_id')->constrained('categories')->cascadeOnDelete();
             $table->string('p_code')->unique()->nullable();
             $table->softDeletes();
             $table->timestamps();

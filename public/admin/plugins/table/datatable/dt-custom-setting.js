@@ -25,12 +25,16 @@ var DTcustomsetting = {
     languagePaginate: {
         "previous": "<i class='flaticon-left-arrow-1'></i> Previous",
         "next": "Next <i class='flaticon-right-arrow-1'></i>"
+    },
+
+    language: {
+        paginate: {
+            previous: "<i class='flaticon-left-arrow-1'></i>",
+            next: "<i class='flaticon-right-arrow-1'></i>"
+        },
+        info: "صفحه _PAGE_ از _PAGES_"
     }
 
-    languageInfo: {
-    	"صفحه _PAGE_ از _PAGES_"
-    }
 
-    
-    
+
 };
