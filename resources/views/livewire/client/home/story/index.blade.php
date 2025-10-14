@@ -1,4 +1,4 @@
-<div x-intersect="initializeSwiper">
+<div >
     <section class="container-fluid p-0 container-lg mt-4 story">
         <div class="d-flex py-2 py-lg-5 py-md-3 justify-content-center align-items-center">
             <div class="swiper myStorySwiper px-0">
@@ -34,31 +34,28 @@
                         class="swiper-slide d-flex flex-column justify-content-center"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
-                        <a href="#">
-                            <img width="80" src="/client/assets/story/perfume.jpeg" /> </a>
+                        <a href="#"><img width="80" src="/client/assets/story/perfume.jpeg" /> </a>
                         <p class="text-center my-2 fw-medium fs-7">عطرهای اصل</p>
                     </div>
                     <div
                         class="swiper-slide d-flex flex-column justify-content-center"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
-                        <a href="#">
-                            <img width="80" src="/client/assets/story/takhfif.jpeg"/>
-                        </a>
+                        <a href="#"><img width="80" src="/client/assets/story/takhfif.jpeg" /> </a>
                         <p class="text-center my-2 fw-medium fs-7">تخفیف ویژه</p>
                     </div>
                     <div
                         class="swiper-slide d-flex flex-column justify-content-center"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
-                        <a href="#"><img width="80" src="/client/client/assets/story/cover.jpeg" /> </a>
+                        <a href="#"><img width="80" src="/client/assets/story/cover.jpeg" /> </a>
                         <p class="text-center my-2 fw-medium fs-7">کاور گوشی</p>
                     </div>
                     <div
                         class="swiper-slide d-flex flex-column justify-content-center"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
-                        <a href="#"><img width="80" src="/client/client/assets/story/tamiz.jpeg" /> </a>
+                        <a href="#"><img width="80" src="/client/assets/story/tamiz.jpeg" /> </a>
                         <p class="text-center my-2 fw-medium fs-7">لباس تمیز</p>
                     </div>
                     <div
@@ -66,7 +63,7 @@
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
                         <a href="#">
-                            <img width="80" src="/client/client/assets/story/best price.jpeg" />
+                            <img width="80" src="/client/assets/story/best price.jpeg" />
                         </a>
                         <p class="text-center my-2 fw-medium fs-7">بهترین قیمت</p>
                     </div>
@@ -74,37 +71,41 @@
                         class="swiper-slide d-flex flex-column justify-content-center"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
-                        <a href="#"><img width="80" src="/client/client/assets/story/perfume.jpeg" /> </a>
+                        <a href="#"><img width="80" src="/client/assets/story/perfume.jpeg" /> </a>
                         <p class="text-center my-2 fw-medium fs-7">عطرهای اصل</p>
                     </div>
                     <div
                         class="swiper-slide d-flex flex-column justify-content-center"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
-                        <a href="#">
-                            <img width="80" src="/client/client/assets/story/takhfif.jpeg" /> </a>
+                        <a href="#"><img width="80" src="/client/assets/story/takhfif.jpeg" /> </a>
                         <p class="text-center my-2 fw-medium fs-7">تخفیف ویژه</p>
                     </div>
                     <div
-                        class="swiper-slide d-flex flex-column justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <a href="#">
-                            <img width="80" src="/client/client/assets/story/cover.jpeg"/> </a>
+                        class="swiper-slide d-flex flex-column justify-content-center"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <a href="#"><img width="80" src="/client/assets/story/cover.jpeg" /> </a>
                         <p class="text-center my-2 fw-medium fs-7">کاور گوشی</p>
                     </div>
-                    <div class="swiper-slide d-flex flex-column justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <a href="#">
-                            <img width="80" src="/client/assets/story/tamiz.jpeg"/>
-                        </a>
+                    <div
+                        class="swiper-slide d-flex flex-column justify-content-center"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <a href="#"><img width="80" src="/client/assets/story/tamiz.jpeg" /> </a>
                         <p class="text-center my-2 fw-medium fs-7">لباس تمیز</p>
                     </div>
                     <div
-                        class="swiper-slide d-flex flex-column justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        class="swiper-slide d-flex flex-column justify-content-center"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
                         <a href="#">
-                            <img width="80" src="/client/assets/story/best price.jpeg"/>
+                            <img width="80" src="/client/assets/story/best price.jpeg" />
                         </a>
                         <p class="text-center my-2 fw-medium fs-7">بهترین قیمت</p>
                     </div>
                 </div>
+
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>

@@ -1,6 +1,6 @@
 <div>
     <!-- === Story section === -->
-    <livewire:client.home.story.index lazy />
+    <livewire:client.home.story.index />
 
 
     <!-- === slider === -->

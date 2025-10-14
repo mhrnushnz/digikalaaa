@@ -14,15 +14,15 @@ use App\Livewire\Admin\Product\Create;
 use App\Livewire\Admin\Product\Features as ProductFeatures;
 use App\Livewire\Admin\Product\Index;
 use App\Livewire\Admin\State\Index as StateIndex;
+use App\Livewire\Admin\Story\Index as StoryIndex;
+
+
 use App\Livewire\Client\Auth\Index as ClientIndex;
 use App\Livewire\Client\Home\Home as ClientHome;
 use Illuminate\Support\Facades\Route;
 
 
 // Admin routes
-Route::get('/', function (){
-    return view('home')->layout('layouts.admin.app');
-});
 Route::get('/dashboard', DashboardIndex::class)->name('admin.dashboard.index');
 Route::get('/country', CountryIndex::class)->name('admin.country.index');
 Route::get('/state', StateIndex::class)->name('admin.state.index');
@@ -37,7 +37,7 @@ Route::get('/product/content/{product}', Content::class)->name('admin.product.co
 Route::get('/product/ck-upload/{productId}', CkUpload::class)->name('admin.product.ck-upload');
 Route::get('/delivery/index', DeliveryIndex::class)->name('admin.delivery.index');
 Route::get('/payment/index', IndexPayment::class)->name('admin.payment.index');
-
+Route::get('/story', StoryIndex::class)->name('admin.story.index');
 
 
 //client

@@ -93,7 +93,6 @@
 <livewire:client.footer.footer/>
 <!-- Bootstrap JS , Swiper JS , and jQuery -->
 @include('layouts.client.client-js')
-@vite(['resources/css/app.css', 'resources/js/app.js'])
 @livewireScripts
 
 </body>

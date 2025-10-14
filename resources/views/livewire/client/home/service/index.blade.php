@@ -3,43 +3,43 @@
         class="services container d-flex overflow-x-auto px-lg-0 flex-md-wrap align-items-center justify-content-center gap-3 gap-lg-5 mt-3 mt-lg-5">
         <div class="d-flex flex-column align-items-center justify-content-center gap-2">
             <a href="#">
-                <img width="50" src="/client/client/assets/services/jet.png" alt="digikala jet" />
+                <img width="50" src="/client/assets/services/jet.png" alt="digikala jet" />
             </a>
             <p class="fs-8">دیجی‌کالا جت</p>
         </div>
         <div class="d-flex flex-column align-items-center justify-content-center gap-2">
             <a href="#">
-                <img width="50" src="/client/client/assets/services/digipay.png" alt="digipay" />
+                <img width="50" src="/client/assets/services/digipay.png" alt="digipay" />
             </a>
             <p class="fs-8">دیجی‌پی</p>
         </div>
         <div class="d-flex flex-column align-items-center justify-content-center gap-2">
             <a href="#">
-                <img width="50" src="/client/client/assets/services/style.png" alt="Ds" />
+                <img width="50" src="/client/assets/services/style.png" alt="Ds" />
             </a>
             <p class="fs-8">%۷۰ تخفیف‌ پلاس</p>
         </div>
         <div class="d-flex flex-column align-items-center justify-content-center gap-2">
             <a href="#">
-                <img width="50" src="/client/client/assets/services/omde.png" alt="bussiness" />
+                <img width="50" src="/client/assets/services/omde.png" alt="bussiness" />
             </a>
             <p class="fs-8">موبایل کارکرده</p>
         </div>
         <div class="d-flex flex-column align-items-center justify-content-center gap-2">
             <a href="#">
-                <img width="50" src="/client/client/assets/services/ersal.png" alt="send" />
+                <img width="50" src="/client/assets/services/ersal.png" alt="send" />
             </a>
             <p class="fs-8">گیفت کارت</p>
         </div>
         <div class="d-flex flex-column align-items-center justify-content-center gap-2">
             <a href="#">
-                <img width="50" src="/client/client/assets/services/lavazem.png" alt="pencile" />
+                <img width="50" src="/client/assets/services/lavazem.png" alt="pencile" />
             </a>
             <p class="fs-8">بازی برنده‌ها</p>
         </div>
         <div class="d-flex flex-column align-items-center justify-content-center gap-2">
             <a href="#">
-                <img width="50" src="/client/client/assets/services/vaght.png" alt="time to buy" />
+                <img width="50" src="/client/assets/services/vaght.png" alt="time to buy" />
             </a>
             <p class="fs-8">سوپرمارکت پرتخفیف</p>
         </div>
@@ -155,8 +155,6 @@
                                 <p class="fs-8">دیجی‌پلاس</p>
                             </div>
                         </div>
-
-                        <!-- other digikala services -->
                     </div>
                 </div>
             </div>
