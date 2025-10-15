@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Livewire\Admin\Country;
 use App\Models\Country;
 use App\Repositories\admin\AdminCategoryRepository;
@@ -7,8 +6,7 @@ use Livewire\Component;
 use Livewire\WithPagination;
 
 
-class Index extends Component
-{
+class Index extends Component{
 
     use WithPagination;
     public $name;
@@ -39,14 +37,12 @@ class Index extends Component
     }
 
 
-
     //عملیات ویرایش نام کشور ها
     public function edit($country_id){
         $country = Country::query()->where('id', $country_id)->first();
         if ($country)
              $this->name = $country->name;    //انتقال دادن ایدی ب مقدار name کل
              $this->country_id = $country->id;
-
     }
 
     public function delete($country_id){

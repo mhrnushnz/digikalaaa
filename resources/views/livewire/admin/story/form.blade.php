@@ -14,13 +14,14 @@
 
                 <div class="form-group mb-3">
                     <input wire:model="title" type="text" name="title" class="form-control" id="sEmail" aria-describedby="emailHelp1" placeholder="عنوان استوری">
+                    @error('title')
+                    <div class="alert alert-danger mb-4" role="alert" wire:loading.remove>     {{--  از وایر دات لودینگ ریمو استفاده میکنیم که زمانی که دو باره ارور خواست نمایش داده شه در حد چند صدم ثانیع حذف بشه و دوباره نمایش داده شه --}}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><svg> ... </svg></button>
+                        <strong>خطا!</strong> {{ $message }}
+                    </div>
+                    @enderror
                 </div>
-                @error('title')
-                <div class="alert alert-outline-primary mb-4" role="alert">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><svg> ... </svg></button>
-                    <strong>خطا!</strong>{{ $message }}
-                </div>
-                @enderror
+
 
 
 
@@ -30,9 +31,9 @@
                     </div>
 
                     @error('thumbnail')
-                    <div class="alert alert-outline-primary mb-4" role="alert">
+                    <div class="alert alert-danger mb-4" role="alert" wire:loading.remove>     {{--  از وایر دات لودینگ ریمو استفاده میکنیم که زمانی که دو باره ارور خواست نمایش داده شه در حد چند صدم ثانیع حذف بشه و دوباره نمایش داده شه --}}
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><svg> ... </svg></button>
-                        <strong>خطا!</strong>{{ $message }}
+                        <strong>خطا!</strong> {{ $message }}
                     </div>
                     @enderror
 
@@ -53,10 +54,8 @@
                     </div>
 
                     @error('story')
-                    <div class="alert alert-outline-primary mb-4" role="alert">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <svg>...</svg>
-                        </button>
+                    <div class="alert alert-danger mb-4" role="alert" wire:loading.remove>     {{--  از وایر دات لودینگ ریمو استفاده میکنیم که زمانی که دو باره ارور خواست نمایش داده شه در حد چند صدم ثانیع حذف بشه و دوباره نمایش داده شه --}}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><svg> ... </svg></button>
                         <strong>خطا!</strong> {{ $message }}
                     </div>
                     @enderror

@@ -1,5 +1,4 @@
 <?php
-
 use App\Livewire\Admin\Category\Features;
 use App\Livewire\Admin\Category\FeatureValue;
 use App\Livewire\Admin\Category\Index as CategoryIndex;

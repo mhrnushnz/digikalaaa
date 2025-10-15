@@ -86,7 +86,8 @@
 @include('layouts.admin.scripts')
 <!-- END GLOBAL MANDATORY SCRIPTS -->
 
-
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @livewireScripts
 
     <script>
         document.addEventListener("livewire:navigated", () => {

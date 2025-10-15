@@ -3,7 +3,7 @@
         <table id="zero-config" class="table table-hover" style="width:100%">
             <thead>
             <tr>
-                <th> #</th>
+                <th>#</th>
                 <th>عنوان</th>
                 <th>تصویر بند انگشتی</th>
                 <th>استوری</th>

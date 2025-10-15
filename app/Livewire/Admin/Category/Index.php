@@ -1,13 +1,10 @@
 <?php
-
 namespace App\Livewire\Admin\Category;
-
 use App\Models\Category;
 use App\Repositories\admin\AdminCategoryRepository;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Livewire\Component;
 use Livewire\WithPagination;
-
 
 
 class Index extends Component{
@@ -38,7 +35,6 @@ class Index extends Component{
 
 
     public function submit(){
-
         $validatedData =  $this->validate([
             'name' => 'required|string|max:30', //نام استان
             'parentId' => 'nullable|exists:categories,id',    //آیدی کشور استان
@@ -76,7 +72,6 @@ class Index extends Component{
         }
 
         $category->delete();
-
         $this->dispatch('success', 'عملیات حذف با موفقیت انجام شد!');
     }
 
