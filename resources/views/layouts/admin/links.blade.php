@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-<title></title>
+<title>digikala</title>
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 <link rel="stylesheet" href="/admin/assets/fonts/font.css">

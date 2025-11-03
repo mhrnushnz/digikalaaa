@@ -116,7 +116,7 @@ class Create extends Component{
         }
 
 
-        $this->repository->submit($validatedData, $this->productId, $storedImages[], $this->coverIndex); //بهتره که از مدلمون ابجکت بسازیم اونم مخصوصا زمانی که تصویر به دیتابیس میفرستیم چون create/update ومحصول واقعیه بهتره ابجکت رو بسازیم !
+        $this->repository->submit($validatedData, $this->productId, $storedImages, $this->coverIndex); //بهتره که از مدلمون ابجکت بسازیم اونم مخصوصا زمانی که تصویر به دیتابیس میفرستیم چون create/update ومحصول واقعیه بهتره ابجکت رو بسازیم !
         $this->dispatch('success', 'عملیات با موفقیت انجام شد!');
         $this->reset();
         return redirect()->route('admin.product.index');

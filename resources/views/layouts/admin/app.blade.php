@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>digikala</title>
     @include('layouts.admin.links')
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @livewireStyles
 </head>
 <body class="font">
 
@@ -86,8 +89,7 @@
 @include('layouts.admin.scripts')
 <!-- END GLOBAL MANDATORY SCRIPTS -->
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-    @livewireScripts
+
 
     <script>
         document.addEventListener("livewire:navigated", () => {
@@ -96,5 +98,8 @@
             }
         });
     </script>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @livewireScripts
+
 </body>
 </html>

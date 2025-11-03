@@ -14,7 +14,7 @@ use App\Livewire\Admin\Product\Features as ProductFeatures;
 use App\Livewire\Admin\Product\Index;
 use App\Livewire\Admin\State\Index as StateIndex;
 use App\Livewire\Admin\Story\Index as StoryIndex;
-
+use App\Livewire\Admin\slider\Index as SliderIndex;
 
 use App\Livewire\Client\Auth\Index as ClientIndex;
 use App\Livewire\Client\Home\Home as ClientHome;
@@ -37,6 +37,7 @@ Route::get('/product/ck-upload/{productId}', CkUpload::class)->name('admin.produ
 Route::get('/delivery/index', DeliveryIndex::class)->name('admin.delivery.index');
 Route::get('/payment/index', IndexPayment::class)->name('admin.payment.index');
 Route::get('/story', StoryIndex::class)->name('admin.story.index');
+Route::get('/slider', SliderIndex::class)->name('admin.slider.index');
 
 
 //client
