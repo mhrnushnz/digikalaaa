@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Client\Home\Slider;
 
+use App\Models\Slider;
 use Livewire\Component;
 
 class Index extends Component
@@ -14,6 +15,7 @@ class Index extends Component
 
     public function render(){
         sleep(1);
-        return view('livewire.client.home.slider.index');
+        $sliders = Slider::query()->get();
+        return view('livewire.client.home.slider.index', compact('sliders'));
     }
 }

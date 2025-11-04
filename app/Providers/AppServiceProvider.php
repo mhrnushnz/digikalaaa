@@ -8,6 +8,8 @@ use App\Repositories\admin\AdminPaymentRepository;
 use App\Repositories\admin\AdminPaymentRepositoryInterface;
 use App\Repositories\admin\ProductRepository;
 use App\Repositories\admin\ProductRepositoryInterface;
+use App\Repositories\client\first_page\ClientFirstPageInterFace;
+use App\Repositories\client\first_page\ClientFirstPageRepository;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider{
@@ -19,6 +21,7 @@ class AppServiceProvider extends ServiceProvider{
         $this->app->bind(AdminCategoryRepositoryInterface::class, AdminCategoryRepository::class);
         $this->app->bind(AdminDeliveryRepositoryInterface::class, AdminDeliveryRepository::class);
         $this->app->bind(AdminPaymentRepositoryInterface::class, AdminPaymentRepository::class);
+        $this->app->bind(ClientFirstPageInterFace::class, ClientFirstPageRepository::class);
     }
 
     /**
