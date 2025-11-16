@@ -7,13 +7,18 @@
     @livewireStyles
     <title>Digikala</title>
 
+    @stack('style')
+
 </head>
 <body>
 <livewire:client.header.index/>
 
+@php
+$routName = \Illuminate\Support\Facades\Route::current()->getName();         //باین کار نامی که برای روتمون تعریف کرده بودیم رو میتونیم بگیریم و بعد شرط زیر برای اعمال شدن کلاس ها نوشت!
+@endphp
 
 
-<main>
+<main {{$routName == 'client.product.index'? "container-fluid px-0 px-lg-5 mt-4" :''}}>
     <!-- === mobile menu === -->
     <div class="fixed-bottom d-flex justify-content-around d-md-none border-top bg-white py-2">
         <a href="#" class="text-black d-flex justify-content-center align-items-center flex-column gap-1">

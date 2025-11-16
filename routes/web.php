@@ -16,8 +16,11 @@ use App\Livewire\Admin\State\Index as StateIndex;
 use App\Livewire\Admin\Story\Index as StoryIndex;
 use App\Livewire\Admin\slider\Index as SliderIndex;
 
+
+
 use App\Livewire\Client\Auth\Index as ClientIndex;
 use App\Livewire\Client\Home\Home as ClientHome;
+use App\Livewire\Client\Product\Index as ClientProduct;
 use Illuminate\Support\Facades\Route;
 
 
@@ -40,11 +43,15 @@ Route::get('/story', StoryIndex::class)->name('admin.story.index');
 Route::get('/slider', SliderIndex::class)->name('admin.slider.index');
 
 
+
 //client
+
+
 
 Route::get('/', ClientHome::class)->name('home');
 Route::get('/auth', ClientIndex::class)->name('client.auth.index');
 Route::get('/auth/gmail', [ClientIndex::class, 'redirectToProvider'])->name('gmail');
 Route::get('/auth/gmail/callback', [ClientIndex::class, 'handelProviderCallback'])->name('callback');
+Route::get('/client/product/{p_code}/{slug?}', ClientProduct::class)->name('client.product.index');
 
 

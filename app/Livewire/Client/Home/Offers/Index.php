@@ -12,7 +12,7 @@ class Index extends Component{
     }
 
     public function mount(){
-        $this->featuredproducts = $this->repository->getFeaturedProduct($this->featuredproducts);
+        $this->featuredproducts = $this->repository->getFeaturedProduct()->toArray();
     }
 
     public function placeholder(){
@@ -20,6 +20,7 @@ class Index extends Component{
     }
 
     public function render(){
+        $featuredproducts = $this->repository->getFeaturedProduct();
         sleep(1);
         return view('livewire.client.home.offers.index');
     }
